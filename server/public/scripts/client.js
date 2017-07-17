@@ -74,17 +74,17 @@ myApp.controller('readyController', function($scope){
   //   photo.views +=1;
   // }
 
-//hide and showing the description
-$scope.hideShow = function(photo, visible, description, views){
+  //hide and showing the description
+  $scope.hideShow = function(photo, visible, description, views){
 
-  photo.visible = !photo.visible;
-  photo.description;
+    photo.visible = !photo.visible;
+    photo.description;
 
-  console.log(photo.visible);
-  console.log(photo.description);
+    console.log(photo.visible);
+    console.log(photo.description);
 
-photo.views +=1;
-}
+    photo.views +=1;
+  }
 
 
 });

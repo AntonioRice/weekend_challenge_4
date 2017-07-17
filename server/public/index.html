@@ -19,13 +19,13 @@
   <body ng-app= 'myApp'>
     <div ng-controller="readyController">
       <!-- ADD PHOTOS TO DOM -->
-      <div ng-repeat="photo in photography">
+      <div class="col-md-6" ng-repeat="photo in photography">
         <!-- click listener added -->
-          <img class="img-rounded" ng-click = "hideShow(photo,visible,description)" ng-src="{{photo.src}}" alt="">
-            <!-- adding views counter -->
-              <p>Views: {{photo.views}}</p>
-              
-            <p ng-hide= photo.visible > {{photo.description}}</p>
+        <img class="img-rounded" ng-click = "hideShow(photo,visible,description)" ng-src="{{photo.src}}" alt="">
+        <!-- adding views counter -->
+        <p>Views: {{photo.views}}</p>
+
+        <p ng-hide= photo.visible > {{photo.description}}</p>
         <!-- <div ng-hide="hideMe">"{{photo.description}}"</div> -->
         <!-- ADD LIKES -->
         <br>
